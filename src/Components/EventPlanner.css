@@ -1,0 +1,435 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #faf8f6;
+    color: #292525;
+}
+
+.event-planner-container {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+header {
+    min-height: 350px;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #6b2444, #a83f6d);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0 0 12px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+header p {
+    font-size: 1.05rem;
+    margin: 0;
+    opacity: 0.95;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+    padding: 60px 20px;
+    background: #faf8f6;
+}
+
+.description h2 {
+    font-size: 2rem;
+    margin: 0 0 12px;
+    color: #292525;
+}
+
+.description p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6d6868;
+}
+
+.get-started-button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #d94f83;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.get-started-button:hover {
+    background: #b93668;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   EVENT CATEGORIES
+========================= */
+
+.events_categories {
+    padding: 65px 20px;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    margin: 0 0 8px;
+    color: #292525;
+}
+
+.section-title p {
+    margin: 0;
+    color: #777;
+    font-size: 0.95rem;
+}
+
+
+/* =========================
+   EVENT CARDS
+========================= */
+
+.category-card {
+    width: 270px;
+    min-height: 255px;
+    padding-bottom: 15px;
+
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.11);
+}
+
+
+/* EVENT ICON */
+
+.category-icon {
+    padding: 14px 0 5px;
+    font-size: 2rem;
+}
+
+
+/* EVENT TITLE */
+
+.category-card h3 {
+    margin: 0;
+    padding: 12px 10px;
+
+    background: #292525;
+    color: white;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.special-card h3 {
+    background: #d94f83;
+}
+
+
+/* EVENT DESCRIPTION */
+
+.category-card > p {
+    margin: 14px 18px 8px;
+
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+
+/* EVENT LIST */
+
+.category-card ul {
+    margin: 8px 0 0;
+    padding: 0;
+}
+
+.category-card li {
+    list-style: none;
+    padding: 4px;
+
+    color: #555;
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    padding: 65px 20px;
+    background: #faf8f6;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin: 0 0 28px;
+}
+
+.feature-grid {
+    max-width: 750px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.feature-box {
+    background: white;
+    padding: 18px;
+
+    border-radius: 12px;
+    border: 1px solid #eeeeee;
+
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    transition: 0.25s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-3px);
+}
+
+.feature-box span {
+    color: #d94f83;
+    font-weight: bold;
+}
+
+.feature-box p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonials {
+    padding: 65px 20px;
+    background: #292525;
+    color: white;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin: 0 0 30px;
+}
+
+.testimonial {
+    max-width: 550px;
+    margin: 15px auto;
+    padding: 18px 22px;
+
+    background: #383234;
+    border-radius: 12px;
+
+    border-left: 3px solid #d94f83;
+}
+
+.testimonial p {
+    margin: 0 0 8px;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    font-style: italic;
+    color: #eee;
+}
+
+.testimonial span {
+    color: #ff8db6;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    padding: 65px 20px;
+    background: white;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+}
+
+.contact-description {
+    color: #777;
+    font-size: 0.95rem;
+    margin: 0 0 25px;
+}
+
+.contact form {
+    max-width: 550px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 12px;
+
+    padding: 12px 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 9px;
+
+    font-size: 0.95rem;
+    outline: none;
+
+    background: #fafafa;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #d94f83;
+    background: white;
+}
+
+.contact textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-button {
+    padding: 12px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #d94f83;
+    color: white;
+
+    font-size: 0.95rem;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.submit-button:hover {
+    background: #b93668;
+    transform: translateY(-2px);
+}
+
+.success-message {
+    margin-top: 15px;
+    color: #29945a;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin: 0;
+    padding: 25px;
+
+    background: #1f1b1d;
+    color: #aaa;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        min-height: 300px;
+        padding: 60px 20px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+    .description h2,
+    .section-title h2,
+    .features h2,
+    .testimonials h2,
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
